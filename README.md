@@ -1,8 +1,8 @@
 # Retail Analytics Dashboard - End-to-End Data Pipeline
 
 An end-to-end retail analytics project simulating the analytics function of 
-a grocery retail chain — covering revenue, store performance, product 
-performance, pricing, and customer churn/segmentation — built on a real 
+a grocery retail chain - covering revenue, store performance, product 
+performance, pricing, and customer churn/segmentation - built on a real 
 2-year grocery transaction dataset.
 
 **Pipeline:** Kaggle API → Python (pandas) → MySQL → Power BI
@@ -24,6 +24,8 @@ team would typically be asked to answer:
 4. How effective are our promotions, and how is pricing positioned across categories?
 5. What does our customer base look like, and how many are churning?
 6. Which high-value customers need a win-back campaign?
+
+## Architecture
 
 ## Architecture
 
@@ -55,11 +57,6 @@ transaction data from a US grocery retailer, covering 2 years (~2,500 households
 2.5M+ transactions, 92,000+ products). It includes purchases, household 
 demographics, promotions (in-store displays and mailers), and coupon activity.
 
-**Note:** This is not Woolworths data specifically - Woolworths does not publish 
-transaction-level data publicly. This project uses a comparable, publicly 
-available grocery retail dataset to demonstrate the same analytical approach 
-(revenue, store/product performance, pricing, churn) that would apply to any 
-grocery retailer's data.
 
 ## Data Cleaning Decisions
 
@@ -89,6 +86,13 @@ mechanical processing:
   relative across promo types, not against an untouched control group.
 
 ## Dashboard
+
+The full interactive Power BI file (.pbix) is available for download here:
+🔗 [retail_analytics.pbix — Google Drive](https://drive.google.com/file/d/1ubhQl8TgpnT6soaQI0zzQhEDCKP4yY3G/view?usp=share_link)
+
+> GitHub doesn't preview .pbix files, and this one exceeds GitHub's 100MB 
+> commit limit. A PDF export and page-by-page screenshots are below; the 
+> live file requires Power BI Desktop and a MySQL connection to fully interact with.
 
 ### Page 1: Revenue & Profit Overview
 ![Revenue Overview](dashboard/screenshots/page1_revenue.png)
@@ -144,7 +148,7 @@ mechanical processing:
   customer spend ($3.4M of ~$6.6M) - a Pareto-style concentration of value
 - Churned customers still show meaningful historical value (avg. $744 
   lifetime spend, 35 purchase frequency) - comparable to or above the 
-  "At Risk" segment — indicating churn represents a real win-back 
+  "At Risk" segment - indicating churn represents a real win-back 
   opportunity, not just customer loss
 
 ### Page 6: Customer Value / At-Risk
@@ -171,9 +175,10 @@ mechanical processing:
 4. Run `sql/schema.sql` in MySQL to create the database structure
 5. Open `notebooks/01_data_pipeline.ipynb`, update the `password` variable 
    with your own local MySQL password, and run all cells
-6. Run the queries in `sql/queries.sql` to explore the data, or open 
-   `dashboard/retail_analytics.pbix` in Power BI Desktop (update the MySQL 
-   connection details to match your local setup)
+6. Run the queries in `sql/queries.sql` to explore the data, or download the 
+   interactive Power BI file from Google Drive (linked above) and open it in 
+   Power BI Desktop (update the MySQL connection details to match your local 
+   setup)
 
 ## Repository Structure
 
@@ -186,7 +191,10 @@ retail-analytics-project/
 │   ├── schema.sql
 │   └── queries.sql
 ├── dashboard/
-│   ├── retail_analytics.pbix
+│   ├── retail_analytics.pdf   # PDF export of the dashboard
 │   └── screenshots/
 └── README.md
 ```
+> Note: The interactive `.pbix` file (138MB) exceeds GitHub's 100MB commit 
+> limit and is hosted externally — see the Dashboard section above for the 
+> Google Drive link.
