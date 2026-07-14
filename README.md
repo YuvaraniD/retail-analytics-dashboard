@@ -194,5 +194,5 @@ retail-analytics-project/
 └── README.md
 ```
 > Note: The interactive `.pbix` file (138MB) exceeds GitHub's 100MB commit 
-> limit and is hosted externally — see the Dashboard section above for the 
+> limit and is hosted externally - see the Dashboard section above for the 
 > Google Drive link.
