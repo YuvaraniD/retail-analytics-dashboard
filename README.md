@@ -1,4 +1,4 @@
-# Retail Analytics Dashboard — End-to-End Data Pipeline
+# Retail Analytics Dashboard - End-to-End Data Pipeline
 
 An end-to-end retail analytics project simulating the analytics function of 
 a grocery retail chain — covering revenue, store performance, product 
