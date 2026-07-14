@@ -27,8 +27,6 @@ team would typically be asked to answer:
 
 ## Architecture
 
-## Architecture
-
 ```
 Kaggle API
     │
