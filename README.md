@@ -33,13 +33,13 @@ team would typically be asked to answer:
 Kaggle API
     │
     ▼
-Python (pandas) — cleaning, quality checks, RFM/churn analysis
+Python (pandas) - cleaning, quality checks, RFM/churn analysis
     │
     ▼
-MySQL — relational schema, SQL analysis queries
+MySQL - relational schema, SQL analysis queries
     │
     ▼
-Power BI — 6-page interactive dashboard
+Power BI - 6-page interactive dashboard
 ```
 ## Tech Stack
 
@@ -88,7 +88,7 @@ mechanical processing:
 ## Dashboard
 
 The full interactive Power BI file (.pbix) is available for download here:
-🔗 [retail_analytics.pbix — Google Drive](https://drive.google.com/file/d/1ubhQl8TgpnT6soaQI0zzQhEDCKP4yY3G/view?usp=share_link)
+🔗 [retail_analytics.pbix - Google Drive](https://drive.google.com/file/d/1ubhQl8TgpnT6soaQI0zzQhEDCKP4yY3G/view?usp=share_link)
 
 > GitHub doesn't preview .pbix files, and this one exceeds GitHub's 100MB 
 > commit limit. A PDF export and page-by-page screenshots are below; the 
