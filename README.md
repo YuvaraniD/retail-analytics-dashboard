@@ -39,6 +39,7 @@ MySQL - relational schema, SQL analysis queries
     ▼
 Power BI - 6-page interactive dashboard
 ```
+
 ## Tech Stack
 
 - **Data Source:** [Dunnhumby "Complete Journey"](https://www.kaggle.com/datasets/frtgnn/dunnhumby-the-complete-journey) (Kaggle)
@@ -165,11 +166,13 @@ The full interactive Power BI file (.pbix) is available for download here:
 2. Get a Kaggle API token from [kaggle.com/settings](https://www.kaggle.com/settings) 
    and place it at `~/.kaggle/kaggle.json`
 3. Set up a Python environment:
+
 ```bash
    conda create -n retail-project python=3.12 -y
    conda activate retail-project
    pip install pandas numpy kaggle pymysql sqlalchemy jupyter matplotlib seaborn scikit-learn
 ```
+
 4. Run `sql/schema.sql` in MySQL to create the database structure
 5. Open `notebooks/01_data_pipeline.ipynb`, update the `password` variable 
    with your own local MySQL password, and run all cells
@@ -193,6 +196,7 @@ retail-analytics-project/
 │   └── screenshots/
 └── README.md
 ```
+
 > Note: The interactive `.pbix` file (138MB) exceeds GitHub's 100MB commit 
 > limit and is hosted externally - see the Dashboard section above for the 
 > Google Drive link.
