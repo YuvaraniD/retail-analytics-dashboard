@@ -71,12 +71,12 @@ mechanical processing:
   adjustment line items, not genuine purchases. Removed from the transaction 
   dataset since they'd distort quantity-based metrics.
 - **Extreme quantity outliers:** A small number of transactions (<1%) had 
-  quantity values in the tens of thousands — traced to weight/volume-based 
+  quantity values in the tens of thousands - traced to weight/volume-based 
   items (primarily fuel). Capped at quantity ≤ 100 for unit-count metrics; 
   revenue figures were unaffected since they're based on sales value, not quantity.
 - **"Coupon/Misc Items" category:** This category unexpectedly ranked #1 by 
   revenue. Investigation showed 84% of its transactions were gasoline sales, 
-  not grocery products — excluded from product-level analysis to keep 
+  not grocery products - excluded from product-level analysis to keep 
   category insights meaningful.
 - **Churn definition:** Defined as no purchase in 90+ days, based on the 
   observed recency distribution (75th percentile = 20 days). Churn status 
@@ -84,7 +84,7 @@ mechanical processing:
   gone quiet are correctly flagged as "Churned" rather than hidden inside 
   "Champions."
 - **Promotion data baseline:** The causal (promotion) dataset only tracks 
-  product-store-weeks with recorded display or mailer activity — there's no 
+  product-store-weeks with recorded display or mailer activity - there's no 
   true "no promotion" baseline in this dataset. Promotion comparisons are 
   relative across promo types, not against an untouched control group.
 
@@ -98,15 +98,15 @@ mechanical processing:
 - Revenue grew sharply in the first ~20 weeks before stabilizing around 
   $65K–90K/week
 - BEEF is the top revenue-generating category ($247K), followed by soft 
-  drinks and dairy — fresh/perishable categories dominate top-line revenue
+  drinks and dairy - fresh/perishable categories dominate top-line revenue
 
 ### Page 2: Store Performance
 ![Store Performance](dashboard/screenshots/page2_store.png)
 
-- Store 367 is the clear top performer at $233K revenue — nearly 25% higher 
+- Store 367 is the clear top performer at $233K revenue - nearly 25% higher 
   than the second-ranked store
 - Revenue is fairly concentrated among the top-performing stores
-- Store performance doesn't correlate purely with basket count — some 
+- Store performance doesn't correlate purely with basket count - some 
   high-basket stores have lower average basket value, suggesting different 
   customer profiles per location
 
@@ -116,7 +116,7 @@ mechanical processing:
 - 307 distinct product categories generated $6M+ in revenue from 92,225 
   unique products
 - Excluded a "Coupon/Misc Items" category after discovering 84% of its 
-  transactions were gasoline sales — a data quality catch that would have 
+  transactions were gasoline sales - a data quality catch that would have 
   misrepresented "top category" if left in
 - High-revenue categories don't always mean high-volume: Beer/Malt Liquors 
   generates strong revenue ($148K) from moderate volume (20K units), while 
@@ -141,9 +141,9 @@ mechanical processing:
 - 6.84% of the customer base (171 of 2,500 households) has churned (90+ days 
   without a purchase)
 - Despite being just 22.4% of customers, "Champions" drive over 50% of total 
-  customer spend ($3.4M of ~$6.6M) — a Pareto-style concentration of value
+  customer spend ($3.4M of ~$6.6M) - a Pareto-style concentration of value
 - Churned customers still show meaningful historical value (avg. $744 
-  lifetime spend, 35 purchase frequency) — comparable to or above the 
+  lifetime spend, 35 purchase frequency) - comparable to or above the 
   "At Risk" segment — indicating churn represents a real win-back 
   opportunity, not just customer loss
 
@@ -151,10 +151,10 @@ mechanical processing:
 ![Customer Value / At-Risk](dashboard/screenshots/page6_atrisk.png)
 
 - The highest-value churned customer had spent over $5,180 historically 
-  before going quiet for 141 days — exactly the kind of customer a retention 
+  before going quiet for 141 days - exactly the kind of customer a retention 
   campaign should prioritize
-- This page converts the churn analysis into an actionable list — ranked by 
-  historical spend — that a retention/marketing team could directly use for 
+- This page converts the churn analysis into an actionable list - ranked by 
+  historical spend - that a retention/marketing team could directly use for 
   win-back outreach
 
 ## How to Reproduce
