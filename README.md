@@ -26,17 +26,19 @@ team would typically be asked to answer:
 6. Which high-value customers need a win-back campaign?
 
 ## Architecture
-Kaggle API
-│
-▼
-Python (pandas) - cleaning, quality checks, RFM/churn analysis
-│
-▼
-MySQL - relational schema, SQL analysis queries
-│
-▼
-Power BI - 6-page interactive dashboard
 
+```
+Kaggle API
+    │
+    ▼
+Python (pandas) — cleaning, quality checks, RFM/churn analysis
+    │
+    ▼
+MySQL — relational schema, SQL analysis queries
+    │
+    ▼
+Power BI — 6-page interactive dashboard
+```
 ## Tech Stack
 
 - **Data Source:** [Dunnhumby "Complete Journey"](https://www.kaggle.com/datasets/frtgnn/dunnhumby-the-complete-journey) (Kaggle)
@@ -175,6 +177,7 @@ mechanical processing:
 
 ## Repository Structure
 
+```
 retail-analytics-project/
 ├── data/raw/              # Dataset (not committed — see reproduce steps)
 ├── notebooks/
@@ -186,3 +189,4 @@ retail-analytics-project/
 │   ├── retail_analytics.pbix
 │   └── screenshots/
 └── README.md
+```
