@@ -50,12 +50,12 @@ Power BI — 6-page interactive dashboard
 
 ## Data Source
 
-This project uses the Dunnhumby "Complete Journey" dataset — real household-level 
+This project uses the Dunnhumby "Complete Journey" dataset - real household-level 
 transaction data from a US grocery retailer, covering 2 years (~2,500 households, 
 2.5M+ transactions, 92,000+ products). It includes purchases, household 
 demographics, promotions (in-store displays and mailers), and coupon activity.
 
-**Note:** This is not Woolworths data specifically — Woolworths does not publish 
+**Note:** This is not Woolworths data specifically - Woolworths does not publish 
 transaction-level data publicly. This project uses a comparable, publicly 
 available grocery retail dataset to demonstrate the same analytical approach 
 (revenue, store/product performance, pricing, churn) that would apply to any 
@@ -63,7 +63,7 @@ grocery retailer's data.
 
 ## Data Cleaning Decisions
 
-A few data quality issues were investigated and resolved during cleaning — 
+A few data quality issues were investigated and resolved during cleaning - 
 documented here since they reflect real analytical judgment calls, not just 
 mechanical processing:
 
@@ -127,7 +127,7 @@ mechanical processing:
 
 - Products promoted through both display and mailer channels together show 
   the deepest average discounting (~$0.80), compared to ~$0.33 for 
-  display-only — suggesting combined promotions are used for the most 
+  display-only - suggesting combined promotions are used for the most 
   aggressive markdowns
 - Premium/niche categories (Smoking Cessation products, Propane, Fragrances) 
   command the highest price-per-unit, while everyday grocery staples sit at 
